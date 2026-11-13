@@ -92,31 +92,38 @@ p{margin-bottom:20px}
 .pull{font-style:italic;font-size:clamp(24px,3.4vw,34px);color:var(--sand);line-height:1.45;border-left:4px solid var(--accent);padding-left:24px;margin:40px 0}
 /* dinas */
 .dgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px;margin:26px 0}
-.dbtn{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px;cursor:pointer;text-align:left;color:var(--text);font-family:'Inter',sans-serif;font-size:13px;font-weight:600;display:flex;align-items:center;gap:10px;transition:.25s}
+.dbtn{min-height:62px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px;cursor:pointer;text-align:left;color:var(--text);font-family:'Inter',sans-serif;font-size:13px;font-weight:600;display:flex;align-items:center;gap:10px;transition:.25s}
 .dbtn .ico{width:34px;height:34px;border-radius:50%;background:#1d3b4a;display:grid;place-items:center;color:var(--accent);font-size:15px;flex:none;transition:.25s}
 .dbtn:hover{border-color:var(--accent)}
 .dbtn.on{background:var(--accent);border-color:var(--accent);color:#0b1820}
 .dbtn.on .ico{background:#0b1820;color:var(--accent2)}
-.dpanel{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:30px;display:grid;grid-template-columns:1fr 1fr 1.1fr;gap:26px}
-.dpanel h4{font-family:'Inter',sans-serif;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent2);margin-bottom:14px}
-.dhead{grid-column:1/-1;display:flex;align-items:center;gap:16px;border-bottom:1px solid var(--line);padding-bottom:18px}
+.dpanel{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:28px}
+.dhead{display:flex;align-items:center;gap:16px;margin-bottom:22px}
 .dhead .ico{width:58px;height:58px;border-radius:50%;background:var(--accent);display:grid;place-items:center;color:#0b1820;font-size:26px;flex:none}
-.dhead h3{font-size:30px}
-.dhead p{margin:0;color:var(--muted);font-style:italic;font-size:16px}
-.mas{background:#0f2531;border-radius:14px;padding:12px 14px;margin-bottom:10px}
-.mas .v{font-family:'Baloo 2',sans-serif;font-size:30px;font-weight:800;color:var(--accent);line-height:1.1}
-.mas .l{font-family:'Inter',sans-serif;font-size:13px;color:var(--text)}
-.ind{font-family:'Inter',sans-serif;font-size:13px;border-collapse:collapse;width:100%}
-.ind td{padding:10px 6px;border-bottom:1px solid var(--line);vertical-align:middle}
-.ind td.v{color:var(--sand);font-weight:700;text-align:right;white-space:nowrap}
-.ind td.a{text-align:right;white-space:nowrap;font-weight:600}
-.ind .up{color:var(--mint)} .ind .down{color:var(--rose)}
-.rek{background:linear-gradient(160deg,#ff8a3d,#ff6b3d);border-radius:18px;padding:20px;color:#1b0f06}
-.rek h4{color:#1b0f06}
+.dhead h3{font-size:28px}.dhead .full{font-family:'Inter',sans-serif;font-size:13px;color:var(--muted);margin-top:2px}
+.flow{display:grid;grid-template-columns:1fr 36px 1fr 36px 1.15fr;align-items:stretch}
+.flow .arr{display:grid;place-items:center;color:var(--accent2);font-size:26px}
+.stepbox{background:#0f2531;border-radius:18px;padding:18px}
+.stepbox .sn{display:flex;align-items:center;gap:10px;margin-bottom:12px;font-family:'Inter',sans-serif;font-size:13px;font-weight:700;color:var(--sand);text-transform:uppercase;letter-spacing:.08em}
+.stepbox .sn b{width:28px;height:28px;border-radius:50%;background:var(--accent2);color:#0b1820;display:grid;place-items:center;font-size:13px}
+.stepbox .lede{font-family:'Inter',sans-serif;font-size:13px;color:var(--muted);margin:-4px 0 12px;line-height:1.5}
+.fact{display:flex;gap:12px;align-items:baseline;padding:10px 0;border-top:1px solid #1d3b4a;font-family:'Inter',sans-serif;font-size:14px;line-height:1.45}
+.fact:first-of-type{border-top:0}
+.fact .v{font-family:'Baloo 2',sans-serif;font-size:24px;font-weight:800;color:var(--accent);min-width:92px;line-height:1.1}
+.meter{padding:10px 0;border-top:1px solid #1d3b4a;font-family:'Inter',sans-serif;font-size:14px}
+.meter:first-of-type{border-top:0}
+.meter .top{display:flex;justify-content:space-between;gap:10px}.meter .top b{color:var(--sand);font-size:16px;white-space:nowrap}
+.meter .good{font-size:12px;margin-top:4px;display:flex;align-items:center;gap:6px}
+.meter .good.lo{color:#ff9f9f}.meter .good.hi{color:var(--mint)}
+.stepbox.rek{background:linear-gradient(160deg,#ff8a3d,#ff6b3d)}
+.stepbox.rek .sn{color:#1b0f06}.stepbox.rek .sn b{background:#1b0f06;color:var(--accent2)}
 .rek ol{list-style:none;counter-reset:r}
-.rek li{counter-increment:r;font-family:'Inter',sans-serif;font-size:14px;line-height:1.5;margin-bottom:12px;padding-left:36px;position:relative}
-.rek li::before{content:counter(r);position:absolute;left:0;top:0;width:24px;height:24px;border-radius:50%;background:#1b0f06;color:var(--accent2);font-size:12px;font-weight:700;display:grid;place-items:center}
-.rek .mitra{font-family:'Inter',sans-serif;font-size:12px;border-top:1px solid rgba(0,0,0,.2);padding-top:10px;margin-top:6px}
+.rek li{counter-increment:r;font-family:'Inter',sans-serif;font-size:14px;line-height:1.5;margin-bottom:11px;padding-left:30px;position:relative;color:#1b0f06}
+.rek li::before{content:counter(r);position:absolute;left:0;top:1px;width:22px;height:22px;border-radius:50%;border:2px solid #1b0f06;color:#1b0f06;font-size:11px;font-weight:700;display:grid;place-items:center}
+.rek .mitra{font-family:'Inter',sans-serif;font-size:12px;border-top:1px solid rgba(0,0,0,.2);padding-top:10px;margin-top:4px;color:#1b0f06}
+.howto{display:flex;gap:10px;flex-wrap:wrap;font-family:'Inter',sans-serif;font-size:13px;color:var(--muted);margin:6px 0 4px}
+.howto span{background:var(--card);border:1px solid var(--line);border-radius:99px;padding:5px 12px}.howto span b{color:var(--accent2)}
+@media(max-width:820px){.flow{grid-template-columns:1fr}.flow .arr{transform:rotate(90deg);height:30px}}
 .take{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:30px}
 .take div{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px}
 .take .k{font-family:'Baloo 2',sans-serif;font-size:34px;color:var(--accent);font-weight:800;display:block;line-height:1.1}
@@ -526,11 +533,12 @@ sup a{font-family:'Inter',sans-serif;font-size:11px;text-decoration:none;color:v
     <div class="wrap anim" style="padding:0;margin:0 auto">
       <div class="eyebrow">Dari temuan ke tindakan · 11 perangkat daerah</div>
       <h2>Peran Tiap <em>Dinas</em></h2>
-      <p>Persoalan ketenagakerjaan tidak bisa diselesaikan satu instansi. Pilih sebuah dinas untuk melihat masalah yang ditunjukkan data, indikator yang perlu dipantau, dan usulan langkah kebijakan.</p>
+      <p>Persoalan ketenagakerjaan tidak bisa diselesaikan satu instansi. Pilih sebuah dinas di bawah ini, lalu baca panelnya dari kiri ke kanan.</p>
+      <div class="howto"><span><b>①</b> Apa masalahnya</span><span>→</span><span><b>②</b> Angka yang perlu dipantau</span><span>→</span><span><b>③</b> Langkah yang diusulkan</span></div>
     </div>
     <div class="dgrid anim" id="dgrid"></div>
     <div class="dpanel" id="dpanel"></div>
-    <div class="note" style="max-width:900px;margin:18px auto 0"><b>Catatan:</b> angka masalah dan indikator berasal dari olahan Sakernas Agustus 2025. Kolom "Arah" menunjukkan arah perubahan yang diharapkan, bukan target resmi. Rekomendasi merupakan usulan penulis untuk dibahas bersama perangkat daerah; rujukan regulasi perlu diverifikasi sebelum digunakan.</div>
+    <div class="note" style="max-width:900px;margin:18px auto 0"><b>Catatan:</b> angka masalah dan indikator berasal dari olahan Sakernas Agustus 2025. Keterangan "makin rendah/tinggi makin baik" menunjukkan arah perbaikan, bukan tren data dan bukan target resmi. Rekomendasi merupakan usulan penulis untuk dibahas bersama perangkat daerah; rujukan regulasi dan nama sebagian perangkat daerah perlu dicocokkan dengan nomenklatur resmi Pemkab Mamuju sebelum digunakan.</div>
   </div>
 </section>
 
@@ -659,19 +667,28 @@ function drawFunnel(){const el=document.getElementById('funnel');el.innerHTML=''
     A({targets:d,width:['0%',Math.max(v/80.7*100,2.5)+'%'],duration:1200,delay:150+i*220,easing:'easeOutExpo'})})}
 
 // ---------- dinas ----------
+const DN={'Disnaker':['Tenaga Kerja','Dinas Tenaga Kerja'],'BKPSDM':['Kepegawaian & Keuangan','Badan Kepegawaian (BKPSDM) dan Badan Keuangan (BPKAD)'],'Koperasi & UMKM':['Koperasi & UMKM','Dinas Koperasi dan Usaha Mikro, Kecil, dan Menengah'],
+ 'DPMPTSP':['Perizinan Usaha','Dinas Penanaman Modal dan Pelayanan Terpadu Satu Pintu (DPMPTSP)'],'Diskominfo':['Kominfo & Statistik','Dinas Komunikasi, Informatika, Statistik dan Persandian (Diskominfosip)'],'Pertanian':['Pertanian','Dinas Pertanian dan Perkebunan'],
+ 'DP3A':['Perempuan & Anak','Dinas Pemberdayaan Perempuan dan Perlindungan Anak (DP3A)'],'Pendidikan':['Pendidikan','Dinas Pendidikan'],'PMD':['Desa','Dinas Pemberdayaan Masyarakat dan Desa (PMD)'],
+ 'Dinsos':['Sosial','Dinas Sosial'],'Bapperida':['Perencanaan','Badan Perencanaan Pembangunan, Riset, dan Inovasi Daerah (Bapperida)']};
 function drawDinasGrid(){const g=document.getElementById('dgrid');
-  DINAS.forEach((d,i)=>{const b=document.createElement('button');b.className='dbtn';b.innerHTML=`<span class="ico">${ICONS[d.ic]||''}</span>${d.short}`;b.onclick=()=>showDinas(i);g.appendChild(b)});
+  DINAS.forEach((d,i)=>{const b=document.createElement('button');b.className='dbtn';b.innerHTML=`<span class="ico">${ICONS[d.ic]||''}</span>${(DN[d.short]||[d.short])[0]}`;b.onclick=()=>{showDinas(i);document.getElementById('dpanel').scrollIntoView({behavior:'smooth',block:'nearest'})};g.appendChild(b)});
   A({targets:'.dbtn',opacity:[0,1],translateY:[18,0],scale:[.9,1],delay:stag(55),duration:600,easing:'easeOutBack'});
   showDinas(0)}
 function showDinas(i){const d=DINAS[i];document.querySelectorAll('.dbtn').forEach((b,j)=>b.classList.toggle('on',i===j));
-  const p=document.getElementById('dpanel');
-  p.innerHTML=`<div class="dhead"><span class="ico">${ICONS[d.ic]||''}</span><div><h3>${d.nama}</h3><p>${d.msg}</p></div></div>
-  <div><h4>Masalah dari data</h4>${d.mas.map(m=>`<div class="mas"><div class="v">${m[0]}</div><div class="l">${m[1]}</div></div>`).join('')}</div>
-  <div><h4>Indikator pantau</h4><table class="ind"><tr><td style="color:var(--muted)">Indikator</td><td class="v" style="color:var(--muted);font-weight:500">Agt 2025</td><td class="a" style="color:var(--muted);font-weight:500">Arah</td></tr>
-  ${d.ind.map(x=>`<tr><td>${x[0]}</td><td class="v">${x[1]}</td><td class="a ${x[2]==='naik'?'up':'down'}">${x[2]==='naik'?ICONS.arrowUp+' Naik':ICONS.arrowDown+' Turun'}</td></tr>`).join('')}</table></div>
-  <div class="rek"><h4>Rekomendasi (usulan)</h4><ol>${d.rek.map(r=>`<li>${r}</li>`).join('')}</ol><div class="mitra"><b>Mitra:</b> ${d.mitra}</div></div>`;
-  A({targets:p.children,opacity:[0,1],translateY:[20,0],delay:stag(90),duration:650,easing:'easeOutCubic'});
-  A({targets:p.querySelectorAll('.mas,.rek li'),opacity:[0,1],translateX:[-14,0],delay:stag(70,{start:250}),duration:500,easing:'easeOutQuad'});
+  const nm=DN[d.short]||[d.short,d.nama];const p=document.getElementById('dpanel');
+  p.innerHTML=`<div class="dhead"><span class="ico">${ICONS[d.ic]||''}</span><div><h3>${nm[0]}</h3><div class="full">${nm[1]}</div></div></div>
+  <div class="flow">
+   <div class="stepbox"><div class="sn"><b>1</b>Apa masalahnya</div><div class="lede">${d.msg}.</div>
+     ${d.mas.map(m=>`<div class="fact"><span class="v">${m[0]}</span><span>${m[1].replace(/\*$/,'')}</span></div>`).join('')}</div>
+   <div class="arr">→</div>
+   <div class="stepbox"><div class="sn"><b>2</b>Angka yang dipantau</div><div class="lede">Kondisi Agustus 2025. Pantau setiap tahun dengan Sakernas.</div>
+     ${d.ind.map(x=>`<div class="meter"><div class="top"><span>${x[0]}</span><b>${x[1]}</b></div><div class="good ${x[2]==='naik'?'hi':'lo'}">${x[2]==='naik'?ICONS.arrowUp+' makin tinggi makin baik':ICONS.arrowDown+' makin rendah makin baik'}</div></div>`).join('')}</div>
+   <div class="arr">→</div>
+   <div class="stepbox rek"><div class="sn"><b>3</b>Langkah yang diusulkan</div><ol>${d.rek.map(r=>`<li>${r}</li>`).join('')}</ol><div class="mitra"><b>Bekerja sama dengan:</b> ${d.mitra}</div></div>
+  </div>`;
+  A({targets:p.querySelectorAll('.dhead,.stepbox,.arr'),opacity:[0,1],translateY:[18,0],delay:stag(110),duration:600,easing:'easeOutCubic'});
+  A({targets:p.querySelectorAll('.fact,.meter,.rek li'),opacity:[0,1],translateX:[-12,0],delay:stag(60,{start:300}),duration:450,easing:'easeOutQuad'});
 }
 
 // ---------- wage slider ----------
